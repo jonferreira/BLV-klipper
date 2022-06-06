@@ -11,6 +11,15 @@ log_path = ~/klipper_logs
 temperature_store_size = 600
 gcode_store_size = 1000
 
+[update_manager KlipperScreen]
+type = git_repo
+path = ~/KlipperScreen
+origin = https://github.com/jordanruthe/KlipperScreen.git
+env = ~/.KlipperScreen-env/bin/python
+requirements = scripts/KlipperScreen-requirements.txt
+install_script = scripts/KlipperScreen-install.sh
+managed_services = KlipperScreen
+
 [authorization]
 force_logins = True
 cors_domains = 
