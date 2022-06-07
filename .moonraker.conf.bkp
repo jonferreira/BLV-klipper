@@ -6,6 +6,11 @@ enable_debug_logging = False
 [file_manager]
 config_path = ~/klipper_config
 log_path = ~/klipper_logs
+queue_gcode_uploads = True
+
+[job_queue]
+load_on_startup = True
+automatic_transition = False
 
 [data_store]
 temperature_store_size = 600
@@ -61,4 +66,5 @@ off_when_shutdown = True
 locked_while_printing = True
 restart_klipper_when_powered = True
 restart_delay = 2
+on_when_job_queued = False
 
